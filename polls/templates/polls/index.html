@@ -1,8 +1,10 @@
 {% load static %}
 
 <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static '@backlight-dev/small-plates.blank-l4q0snfh/tokens/variables.css' %}">
 
 {% if latest_question_list %}
+    <div style="color: var(--figma-primary-500);">Hello</div>
     <ul>
     {% for question in latest_question_list %}
         <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>

@@ -1,6 +1,8 @@
-li a {
-    color: green;
+@import url("@small-plates/blank-l4q0snfh/styles.css")
+
+li a, li a:visited {
+    color: var(--figma-warning-500);
 }
 body {
-    background: white url("images/background.gif") no-repeat;
+  background: var(--figma-primary-500);
 }
